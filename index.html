@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>BMI Calculator</title>
+</head>
+<body>
+  <main class="container">
+    <h1 class="heading">Body Mass Index Calculator</h1>
+    <form class="form-field">
+    <section class="data-field">
+    <div class="addon">
+      <span class="addon-item">kg</span>
+      <input type="number" class="input-addon" placeholder="Weight in kilograms" id="weight">
+    </div>
+
+    <div class="addon">
+      <span class="addon-item">m</span>
+      <input type="number" step="0.01" class="input-addon" placeholder="Height in meters" id="height">
+    </div>
+  </section>  
+    <input type="submit" class="btn" value="Calculate">
+  </form>
+  
+
+  <section class="results">
+    <div class="addon">
+      <span class="addon-item">BMI</span>
+      <input type="number" step="0.01" class="input-addon"  id="bmi" disabled>
+    </div>
+
+    <div class="addon">
+      <span class="addon-item">Status</span>
+      <input type="text" class="input-addon"  id="bmi-status" disabled>
+    </div>
+  </section>
+  </main>
+  
+
+  <script src='app.js'></script>
+</body>
+</html>
